@@ -1,14 +1,18 @@
 #include <stdio.h>
 #include <locale.h>
+#include <stdlib.h>
 int main () {
 	setlocale (LC_ALL ,"");
 	int menu, serv, card, quarto1, quarto2, quarto3, quarto4, quarto5, quarto6, quarto7 ;
 	char nome [20],svdq[20], cpf[20], telefone[20], email[50], senha[20], quarto[20], lavanderia[20], equipesc[20], sucos[20], refrigerante[20], lanche[20], salgadinho[20], doce[20], pratosfei[20], porcoes[20];
+	do{
+	
 	printf("bem vindo ao hotel do robson, o con: \n");
 	printf("o que você deseja?: \n");
 	printf("\n [1] - fazer chrckin");
 	printf("\n [2] - solicitar serviço de quarto");
-	printf("\n [3] - fazer checkin\n");
+	printf("\n [3] - fazer pedido");
+	printf("\n [4] - sair");
 	scanf("%d", &menu);
 	
 	
@@ -116,18 +120,22 @@ int main () {
         break;
         default:        
 		return 0;
-				
+	
 	}
-        default:
-        return 1;
-    }
+		case 4:
+				printf("ate logo...\n");
+				break;
+			default :
+				printf("opçao invalida! tente novamente\n");
+		}
+		
+		printf("\npressione enter para continuar");
+		getchar(); //funciona como o scanf
+		getchar(); //aguardar o enter do usuario
+		
+		system("cls");
+	}while(menu != 4);
+
    
 return 0;
 }
-		
-		
-		
-		
-		
-		
-		
