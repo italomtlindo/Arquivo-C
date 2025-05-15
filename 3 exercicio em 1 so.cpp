@@ -65,7 +65,7 @@ void exercicio1020() {
 }
 
 
-// Exercício 3: Nome do mês (sem const char*)
+// Exercício 3: Nome do mês
 void exercicio1052() {
     int numeromes;
 
