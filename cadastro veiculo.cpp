@@ -15,12 +15,10 @@ void cadastrar();
 void listar();
 void filtrar_combustivel();
 void buscar();
-void vendas();
-
 int main(){
     int opc;
     do{
-        printf("----------MENU----------\n");
+        printf("MENU\n");
         printf("1- Cadastrar veiculo\n");
         printf("2- Listar veiculos\n");
         printf("3- Filtrar por tipo de combustivel\n");
